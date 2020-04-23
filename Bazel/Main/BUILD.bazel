@@ -1,0 +1,20 @@
+cc_binary(
+    name = "main",
+    srcs = ["main.cpp"],
+)
+
+cc_library(
+    name = "awesome_class",
+    srcs = ["Libraries/awesome_class.cpp"],
+    hdrs = ["Libraries/awesome_class.h"],
+)
+
+cc_test(
+    name = "awesome_class_test",
+    srcs = ["Test/test.cpp"],
+    tags = ["test"],
+    deps = [
+        ":awesome_class",
+        "@googletest//:gtest",
+    ],
+)

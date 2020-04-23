@@ -1,8 +1,10 @@
 directories:
+
   Main
   ThirdParty
 
 targets:
+#  //:main
   //Main/...:all
   //ThirdParty/...:all
 
