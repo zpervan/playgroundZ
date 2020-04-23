@@ -22,4 +22,4 @@ before install:
 
 script:
   - cd CMake && mkdir build && cd build && cmake .. && cmake --build . -- -j2
-  - cd ../../Bazel && bazel build //:main
+  - cd ../../Bazel && bazel build //Main:main && bazel test //Main:awesome_class_test
