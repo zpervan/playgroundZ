@@ -2,3 +2,18 @@ cc_binary(
     name = "main",
     srcs = ["Main/main.cpp"],
 )
+
+cc_library(
+    name = "awesome_class",
+    srcs = ["Main/Libraries/awesome_class.cpp"],
+    hdrs = ["Main/Libraries/awesome_class.h"],
+)
+
+cc_test(
+    name = "awesome_class_test",
+    srcs = ["Main/Test/test.cpp"],
+    tags = ["test"],
+    deps = [
+        ":awesome_class",
+        "@googletest//:gtest"],
+)
