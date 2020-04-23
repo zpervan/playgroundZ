@@ -1,0 +1,59 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        // ###### CONVEX HULL BEGIN ###### 
+        {
+            "label": "Convex Hull | Build Release",
+            "type": "shell",
+            "command": "bazel build //Main/ConvexHull:main",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "Convex Hull | Build Debug",
+            "type": "shell",
+            "command": "bazel build //Main/ConvexHull:main -c dbg",
+            "group": "build"
+        },
+        {
+            "label": "Convex Hull | Run Release",
+            "type": "shell",
+            "command": "bazel run //Main/ConvexHull:main",
+            "group": "none"
+        },
+        // ###### CONVEX HULL END ###### 
+        // ###### LINEAR REGRESSION BEGIN ###### 
+        {
+            "label": "Linear Regression | Build Release",
+            "type": "shell",
+            "command": "bazel build //Main/LinearRegression:main",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "Linear Regression | Build Debug",
+            "type": "shell",
+            "command": "bazel build //Main/LinearRegression:main -c dbg",
+            "group": "build"
+        },
+        {
+            "label": "Linear Regression | Run Release",
+            "type": "shell",
+            "command": "bazel run //Main/LinearRegression:main",
+            "group": "none"
+        },
+        {
+            "label": "Linear Regression Utils Test | Build Debug",
+            "type": "shell",
+            "command": "bazel build //Main/LinearRegression:linear_regression_utils_test -c dbg",
+            "group": "test"
+        }
+        // ###### LINEAR REGRESSION END ###### 
+    ]
+}

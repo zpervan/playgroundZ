@@ -1,0 +1,6 @@
+workspace(name = "playgroundZ")
+
+local_repository(
+    name = "googletest",
+    path = "ThirdParty/GoogleTest/",
+)
