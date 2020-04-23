@@ -1,17 +1,11 @@
 directories:
   Main
-  Utils
   ThirdParty
 
 targets:
   //Main/...:all
-  //Utils/...:all
   //ThirdParty/...:all
 
 import_run_configurations:
-  .clion_targets/main_build_release.xml
+  .clion_targets/main_build.xml
   .clion_targets/main_run.xml
-    
-additional_languages:
-  # Uncomment any additional languages you want supported
-  # dart
