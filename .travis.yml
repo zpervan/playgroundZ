@@ -7,6 +7,9 @@ compiler:
 os:
   - linux
 
+git:
+    submodules: false
+
 addons:
   apt:
     sources:
@@ -16,6 +19,8 @@ addons:
       - pkg-config
       
 before install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
   - wget https://github.com/bazelbuild/bazel/releases/download/3.1.0/bazel_3.1.0-linux-x86_64.deb
   - sha256sum -c Tools/bazel_3.1.0-linux-x86_64.deb.sha256
   - sudo dpkg -i bazel_3.1.0-linux-x86_64.deb
