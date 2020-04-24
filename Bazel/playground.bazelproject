@@ -1,12 +1,8 @@
 directories:
-
   Main
-  ThirdParty
 
 targets:
-#  //:main
   //Main/...:all
-  //ThirdParty/...:all
 
 import_run_configurations:
   .clion_targets/main_build.xml

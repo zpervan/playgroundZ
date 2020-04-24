@@ -1,5 +1,5 @@
-#include "../Libraries/awesome_class.h"
-
+#include "Main/Libraries/awesome_class.h"
+#include "json.hpp"
 #include "gtest/gtest.h"
 
 TEST(AwesomeClassTest, GivenTwoNumbers_WhenSumming_TheCorrectValueReturned) {
@@ -9,6 +9,11 @@ TEST(AwesomeClassTest, GivenTwoNumbers_WhenSumming_TheCorrectValueReturned) {
   const int actual_result = awesome_class.SumNumbers(20, 22);
 
   EXPECT_EQ(expected_result, actual_result);
+}
+
+TEST(JsonParserTest, InstatiateNlohmannJsonParser)
+{
+  nlohmann::json json;
 }
 
 int main(int argc, char **argv) {

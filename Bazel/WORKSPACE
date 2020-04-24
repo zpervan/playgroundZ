@@ -4,3 +4,8 @@ local_repository(
     name = "googletest",
     path = "../ThirdParty/GoogleTest/",
 )
+
+local_repository(
+    name = "Nlohmann",
+    path = "../ThirdParty/Nlohmann/",
+)

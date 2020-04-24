@@ -15,6 +15,7 @@ cc_test(
     tags = ["test"],
     deps = [
         ":awesome_class",
+        "@Nlohmann//:nlohmann_json_parser",
         "@googletest//:gtest",
     ],
 )
