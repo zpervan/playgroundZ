@@ -1,6 +1,10 @@
 cc_binary(
     name = "main",
     srcs = ["main.cpp"],
+    deps = [
+        "@Nlohmann//:nlohmann_json_parser",
+        "@fmtlib//:fmt",
+    ],
 )
 
 cc_library(
@@ -16,6 +20,7 @@ cc_test(
     deps = [
         ":awesome_class",
         "@Nlohmann//:nlohmann_json_parser",
+        "@fmtlib//:fmt",
         "@googletest//:gtest",
     ],
 )

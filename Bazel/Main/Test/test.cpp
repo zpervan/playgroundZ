@@ -1,5 +1,6 @@
 #include "Main/Libraries/awesome_class.h"
 #include "json.hpp"
+#include "fmt/core.h"
 #include "gtest/gtest.h"
 
 TEST(AwesomeClassTest, GivenTwoNumbers_WhenSumming_TheCorrectValueReturned) {
@@ -14,6 +15,14 @@ TEST(AwesomeClassTest, GivenTwoNumbers_WhenSumming_TheCorrectValueReturned) {
 TEST(JsonParserTest, InstatiateNlohmannJsonParser)
 {
   nlohmann::json json;
+  SUCCEED();
+}
+
+
+TEST(FmtFormatTest, InstatiateFmtFormat)
+{
+    fmt::print("Hello, World!");
+    SUCCEED();
 }
 
 int main(int argc, char **argv) {

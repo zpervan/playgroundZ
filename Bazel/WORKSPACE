@@ -9,3 +9,8 @@ local_repository(
     name = "Nlohmann",
     path = "../ThirdParty/Nlohmann/",
 )
+
+local_repository(
+    name = "fmtlib",
+    path = "../ThirdParty/fmt/",
+)

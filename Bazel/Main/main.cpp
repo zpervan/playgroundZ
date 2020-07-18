@@ -3,7 +3,10 @@
 //
 #include <iostream>
 
+#include "fmt/core.h"
+
 int main()
 {
   std::cout << R"rawr( Hellou! )rawr";
+  fmt::print("Herro!");
 }

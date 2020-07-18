@@ -1,7 +1,3 @@
-[submodule "fmt"]
-    path = ThirdParty/fmt
-    url = git@github.com:fmtlib/fmt.git
-
 [submodule "SFML"]
     path = ThirdParty/SFML
     url = git@github.com:SFML/SFML.git
