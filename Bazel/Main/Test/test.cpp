@@ -1,6 +1,6 @@
 #include "Main/Libraries/awesome_class.h"
 #include "json.hpp"
-#include "fmt/core.h"
+#include "include/fmt/core.h"
 #include "gtest/gtest.h"
 
 TEST(AwesomeClassTest, GivenTwoNumbers_WhenSumming_TheCorrectValueReturned) {
