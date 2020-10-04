@@ -1,6 +1,16 @@
 workspace(name = "playgroundZ")
 
 local_repository(
+    name = "asiolib",
+    path = "../ThirdParty/asio-1.18.0/",
+)
+
+local_repository(
+    name = "fmtlib",
+    path = "../ThirdParty/fmt/",
+)
+
+local_repository(
     name = "googletest",
     path = "../ThirdParty/GoogleTest/",
 )
@@ -8,9 +18,4 @@ local_repository(
 local_repository(
     name = "Nlohmann",
     path = "../ThirdParty/Nlohmann/",
-)
-
-local_repository(
-    name = "fmtlib",
-    path = "../ThirdParty/fmt/",
 )

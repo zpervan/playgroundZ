@@ -1,6 +1,9 @@
+#define ASIO_STANDALONE
+
 #include "Main/Libraries/awesome_class.h"
 #include "json.hpp"
 #include "include/fmt/core.h"
+#include "asio.hpp"
 #include "gtest/gtest.h"
 
 TEST(AwesomeClassTest, GivenTwoNumbers_WhenSumming_TheCorrectValueReturned) {
@@ -23,6 +26,12 @@ TEST(FmtFormatTest, InstatiateFmtFormat)
 {
     fmt::print("Hello, World!");
     SUCCEED();
+}
+
+TEST(AsioTest, InstatiateAsioLib) {
+  const auto *ec = new asio::error_code;
+
+  ASSERT_TRUE(ec);
 }
 
 int main(int argc, char **argv) {
