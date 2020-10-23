@@ -3,7 +3,7 @@
 #include "Main/Libraries/awesome_class.h"
 #include "json.hpp"
 #include "include/fmt/core.h"
-#include "include/spdlog/spdlog.h"
+// #include "include/spdlog/spdlog.h"
 #include "asio.hpp"
 #include "gtest/gtest.h"
 
@@ -34,12 +34,13 @@ TEST(AsioTest, InstatiateAsioLib) {
   ASSERT_TRUE(ec);
 }
 
-TEST(spdlogTest, InstaitateSpdlog)
-{
-  spdlog::warn("A message seen as a warning!");
+// TEST(spdlogTest, DISABLED_InstaitateSpdlog)
+// {
+//   spdlog::warn("A message seen as a warning!");
+//   spdlog::info("Hi");
 
-  SUCCEED();
-}
+//   SUCCEED();
+// }
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
