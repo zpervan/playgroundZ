@@ -1,7 +1,3 @@
 [submodule "SFML"]
     path = ThirdParty/SFML
     url = git@github.com:SFML/SFML.git
-
-[submodule "spdlog"]
-    path = ThirdParty/spdlog
-    url = git@github.com:gabime/spdlog.git

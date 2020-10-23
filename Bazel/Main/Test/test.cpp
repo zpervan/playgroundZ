@@ -3,6 +3,7 @@
 #include "Main/Libraries/awesome_class.h"
 #include "json.hpp"
 #include "include/fmt/core.h"
+#include "include/spdlog/spdlog.h"
 #include "asio.hpp"
 #include "gtest/gtest.h"
 
@@ -21,7 +22,6 @@ TEST(JsonParserTest, InstatiateNlohmannJsonParser)
   SUCCEED();
 }
 
-
 TEST(FmtFormatTest, InstatiateFmtFormat)
 {
     fmt::print("Hello, World!");
@@ -32,6 +32,13 @@ TEST(AsioTest, InstatiateAsioLib) {
   const auto *ec = new asio::error_code;
 
   ASSERT_TRUE(ec);
+}
+
+TEST(spdlogTest, InstaitateSpdlog)
+{
+  spdlog::warn("A message seen as a warning!");
+
+  SUCCEED();
 }
 
 int main(int argc, char **argv) {

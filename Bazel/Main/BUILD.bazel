@@ -24,5 +24,6 @@ cc_test(
         "@asiolib//:asio",
         "@fmtlib//:fmt",
         "@googletest//:gtest",
+        "@spdloglib//:spdlog"
     ],
 )
