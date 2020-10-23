@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Bazel",
+                "${workspaceFolder}/CMake",
+                "${workspaceFolder}/Meson",
+                "${workspaceFolder}/ThirdParty/fmt",
+                "${workspaceFolder}/ThirdParty/GoogleTest",
+                "${workspaceFolder}/ThirdParty/asio-1.18.0",
+                "${workspaceFolder}/ThirdParty/Nlohmann",
+                "${workspaceFolder}/ThirdParty/spdlog"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,6 +1,6 @@
 #define ASIO_STANDALONE
 
-#include "Main/Libraries/awesome_class.h"
+#include "../Libraries/awesome_class.h"
 #include "json.hpp"
 #include "include/fmt/core.h"
 // #include "include/spdlog/spdlog.h"
